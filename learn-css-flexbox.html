@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <style>
+      .parent {
+        display: flex;
+        background-color: aqua;
+      }
+
+      .child {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        margin-right: 8px;
+        border: 1px solid black;
+      }
+      #c1 {
+        flex-basis: 500px;
+        flex-grow: 1;
+        flex-shrink: 5;
+      }
+      #c2 {
+        flex-basis: 300px;
+        flex-grow: 1;
+        flex-shrink: 1;
+      }
+      #c3 {
+        flex-basis: 300px;
+        flex-grow: 1;
+        flex-shrink: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div id="c1" class="child">자식</div>
+      <div id="c2" class="child">자식</div>
+      <div id="c2" class="child">자식</div>
+    </div>
+  </body>
+</html>
